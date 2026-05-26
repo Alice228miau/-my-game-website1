@@ -1,0 +1,387 @@
+body {
+	background-color: #FFD9D9;
+	margin: 0;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	
+ }
+ 
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    background-color: #8D2323; 
+    padding: 20px 30px; 
+    width: 100%; 
+    
+}
+
+
+.buttons-group {
+    display: flex;
+    gap: 15px; 
+}
+
+
+.btn {
+    padding: 15px 30px; 
+    border: none;
+    border-radius: 8px; 
+    background-color: #FFD9D9; 
+    color: #8D2323; 
+    font-size: 18px; 
+    font-weight: bold; 
+    cursor: pointer; 
+
+}
+
+
+.btn-large {
+    font-size: 24px;
+    padding: 20px 40px; 
+}
+
+
+.btn:hover {
+    background-color: #ffa8a8; 
+    transform: translateY(-2px); 
+    
+}
+ .history-link {
+            color: #8D2323 ;
+            font-weight: bold;
+            font-size: 20px;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #ffe6e6;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+.schedule, .address {
+    width: 48%;
+    padding: 20px;
+    background-color: #8D2323;
+    border-radius: 10px;
+}
+
+.schedule-text {
+    padding-left: 20px;
+}
+
+.schedule h2, .address h2 {
+    color:  #FFD9D9;
+    margin-bottom: 10px;
+}
+
+.schedule ul {
+    list-style-type: none;
+    color: #fff;
+}
+
+.map {
+	margin-top: 50px;
+	align-items: center;
+	justify-content: center; 
+	display: flex;
+	
+	
+}
+
+.cat-img, .map-img {
+    width: 100%;
+    border-radius: 5px;
+	
+}
+
+.address p {
+    color: #FFD9D9;
+    margin-bottom: 10px;
+}
+h2 {
+	margin-top: 10px;
+}
+
+.footer-block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px; 
+    background-color: #8B0000; 
+    padding: 50px; 
+	margin-top: 50px;
+}
+
+.left-text {
+    color: #000000; 
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.right-text {
+    background-color: #FFD9D9; 
+    padding: 10px 20px;
+    border-radius: 10px; 
+    font-size: 16px;
+    color: #8B0000;
+}
+.page {
+	min-height: 10vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+ @media (max-width: 768px) {
+    
+    .header {
+        flex-direction: column;
+        gap: 15px;
+        padding: 15px;
+        text-align: center;
+    }
+
+    .btn-large {
+        width: 100%;
+        font-size: 20px;
+        padding: 15px;
+    }
+
+    .buttons-group {
+        width: 100%;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .buttons-group .btn {
+        width: 100%;
+        padding: 14px 20px;
+        font-size: 16px;
+    }
+
+    .history-link {
+        font-size: 18px;
+    }
+
+   
+    .container {
+        flex-direction: column;
+        margin: 15px auto;
+        gap: 20px;
+        padding: 0 12px;
+    }
+
+    .schedule, .address {
+        width: 100%;
+        padding: 20px;
+    }
+
+    
+    .schedule {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .cat-img {
+        max-width: 100%;
+        margin-bottom: 15px;
+        order: 1;
+    }
+
+    .schedule-text {
+        padding-left: 0;
+        order: 2;
+    }
+
+    .schedule h2, .address h2 {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .schedule li {
+        font-size: 16px;
+        padding: 8px 0;
+        text-align: center;
+        border-bottom: 1px solid rgba(255, 217, 217, 0.2);
+    }
+
+    .address p {
+        font-size: 18px;
+        text-align: center;
+    }
+
+   
+    .map {
+        margin-top: 20px;
+    }
+    
+    .map iframe {
+        width: 100%;
+        height: 280px;
+        border-radius: 8px;
+    }
+
+   
+    .footer-block {
+        flex-direction: column;
+        gap: 15px;
+        padding: 25px 20px;
+        text-align: center;
+        margin-top: 30px;
+    }
+
+    .left-text, .right-text {
+        width: 100%;
+        text-align: center;
+    }
+
+    .right-text {
+        padding: 10px 15px;
+        font-size: 13px;
+    }
+
+    .left-text {
+        font-size: 12px;
+    }
+}
+.page {
+	min-height: 10vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+/* ДЛЯ ОЧЕНЬ МАЛЕНЬКИХ ТЕЛЕФОНОВ (iPhone SE, Android до 480px) */
+@media (max-width: 480px) {
+    .header {
+        padding: 12px;
+        gap: 10px;
+    }
+
+    .btn-large {
+        font-size: 18px;
+        padding: 12px;
+    }
+
+    .buttons-group .btn {
+        padding: 12px 15px;
+        font-size: 14px;
+    }
+
+    .history-link {
+        font-size: 16px;
+    }
+
+    .container {
+        margin: 10px auto;
+        gap: 15px;
+        padding: 0 10px;
+    }
+
+    .schedule, .address {
+        padding: 15px;
+        border-radius: 12px;
+    }
+
+    .schedule h2, .address h2 {
+        font-size: 18px;
+        margin-bottom: 8px;
+    }
+
+    .schedule li {
+        font-size: 14px;
+        padding: 6px 0;
+    }
+
+    .address p {
+        font-size: 16px;
+    }
+
+    .map iframe {
+        height: 200px;
+    }
+
+    .footer-block {
+        padding: 18px 15px;
+        gap: 10px;
+        margin-top: 20px;
+    }
+
+    .right-text {
+        padding: 8px 12px;
+        font-size: 11px;
+    }
+
+    .left-text {
+        font-size: 10px;
+    }
+}
+
+.page {
+	min-height: 10vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+
+@media (max-width: 768px) and (orientation: landscape) {
+    .header {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    
+    .buttons-group {
+        flex-direction: row;
+        width: auto;
+    }
+    
+    .btn-large {
+        width: auto;
+    }
+    
+    .container {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    
+    .schedule, .address {
+        width: 100%;
+    }
+    
+    .map iframe {
+        height: 180px;
+    }
+}
+.page {
+	min-height: 10vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}

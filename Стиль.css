@@ -1,0 +1,200 @@
+body {
+	background-color: #FFD9D9;
+	margin: 0;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	
+ }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+
+.header {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    background-color: #8D2323; 
+    padding: 20px 30px; 
+    width: 100%; 
+    
+}
+
+
+.buttons-group {
+    display: flex;
+    gap: 15px; 
+}
+
+
+.btn {
+    padding: 15px 30px; 
+    border: none;
+    border-radius: 8px; 
+    background-color: #FFD9D9; 
+    color: #8D2323; 
+    font-size: 18px; 
+    font-weight: bold; 
+    cursor: pointer; 
+
+}
+
+
+.btn-large {
+    font-size: 24px;
+    padding: 20px 40px; 
+}
+
+
+.btn:hover {
+    background-color: #ffa8a8; 
+    transform: translateY(-2px); 
+    
+}
+
+.text {
+    line-height: 1.6; 
+    font-size: 38px; 
+	color:  #8D2323;
+	font-family: 'Arial', sans-serif;
+}
+
+.left-side {
+    width: 50%; 
+}
+
+.right-side {
+    width: 90%; 
+}
+
+.logo {
+  
+    height: auto; 
+}
+
+.container {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 50px; 
+    height: 100vh; 
+}
+
+.footer-block {
+   
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px; 
+    background-color: #8B0000; 
+	margin-top: 5px;
+    padding: 50px; 
+	
+}
+
+.left-text {
+    color: #000000; 
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.right-text {
+    background-color: #FFD9D9; 
+    padding: 10px 20px; 
+    border-radius: 10px; 
+    font-size: 16px;
+    color: #8B0000; 
+}
+
+.history-link {
+            color: #8D2323 ;
+            font-weight: bold;
+            font-size: 20px;
+            text-decoration: none;
+            cursor: pointer;
+        }
+		
+.page {
+	min-height: 0vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+ @media (max-width: 768px) {
+    
+   
+    .header {
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .btn-large {
+        width: 100%;
+        font-size: 20px;
+        padding: 15px 20px;
+    }
+
+    .buttons-group {
+        width: 100%;
+        flex-direction: column; 
+        gap: 10px;
+    }
+
+    .buttons-group .btn {
+        width: 100%;
+    }
+
+    .history-link {
+        font-size: 18px;
+    }
+
+   
+    .container {
+        flex-direction: column;
+        padding: 20px;
+        gap: 20px;
+    }
+
+    .left-side, .right-side {
+        width: 100%; 
+    }
+
+    .logo {
+        max-width: 80%; 
+        margin: 0 auto;
+    }
+
+    
+    .text {
+        font-size: 18px;
+        text-align: center; 
+    }
+
+   
+    .footer-block {
+        flex-direction: column;
+        gap: 15px;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .left-text {
+        font-size: 14px;
+    }
+
+    .right-text {
+        width: 100%;
+        font-size: 14px;
+    }
+}

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Пушистые лапки</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #f5f0eb;
+            font-family: 'Segoe UI', 'Roboto', 'Helvetica Neue', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1280px;
+            width: 100%;
+            background-color: #fffcf8;
+            padding: 50px 60px;
+            box-shadow: 0 0 0 1px rgba(0,0,0,0.03), 0 10px 30px rgba(0,0,0,0.05);
+        }
+
+        h1 {
+            font-size: 52px;
+            font-weight: 700;
+            color: #3e2a1f;
+            margin-bottom: 40px;
+            font-family: 'Georgia', 'Times New Roman', Times, serif;
+        }
+
+        /* ГЛАВНОЕ — делаем блоки в одну строку через flex */
+        .info-row {
+            display: flex;        /* включает горизонтальное расположение */
+            gap: 80px;           /* расстояние между блоками */
+            align-items: baseline;
+        }
+
+        .info-item {
+            flex: 1;             /* блоки одинаковой ширины */
+        }
+
+        .info-item h2 {
+            font-size: 32px;
+            font-weight: 600;
+            color: #4a3422;
+            margin-bottom: 8px;
+            font-family: 'Georgia', 'Times New Roman', Times, serif;
+        }
+
+        .info-item p {
+            font-size: 18px;
+            color: #6a4e32;
+            font-weight: 500;
+        }
+
+        /* для мобильных телефонов — чтобы не ломалось */
+        @media (max-width: 700px) {
+            .container {
+                padding: 30px 25px;
+            }
+            h1 {
+                font-size: 36px;
+            }
+            .info-row {
+                flex-wrap: wrap;   /* на маленьких экранах переносим */
+                gap: 30px;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>🐾 Пушистые лапки</h1>
+
+    <!-- Эти два блока будут РЯДОМ -->
+    <div class="info-row">
+        <div class="info-item">
+            <h2>Режим работы</h2>
+            <p>Ежедневно с 11:00 до 19:00</p>
+        </div>
+        <div class="info-item">
+            <h2>Животные</h2>
+            <p>Собаки, кошки</p>
+        </div>
+    </div>
+</div>
+</body>
+</html
